@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Manipal Racing</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="footer, links, icons" />
+
+    <!-- various cdns -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >  
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/lib/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+
+    <!-- all external css -->
+    <link rel="stylesheet" href="css/footer-distributed.css">
+    <link rel="stylesheet" type="text/css" href="spinner.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/home.css">     
+    <link rel="icon" href="images/icon.png"> 
+    <link rel="stylesheet" type="text/css" href="carbtn.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">   
+    
+    
+    <!-- all external javascript -->
+    <script type="text/javascript" src="jumper.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/typewrite.js"></script>
+    <script src="navbar.js"></script>
+    <script src="jumper.js"></script>
+   
+
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+
+
+    <!-- for meet the devs -->
+   
+    
+    
+    
+    <script>
+        function myMove() {
+          
+          var id=localStorage.getItem('key');
+            if(!(id==null)){
+          document.getElementById(id).click();
+          localStorage.clear();}
+            else{
+                document.getElementById("v8").click();
+            }
+            
+          var elem = document.getElementById("animate");   
+          var pos = 0;
+          setInterval(frame, 11);
+          function frame() {
+            if(pos>=100){
+                pos=-7;
+                setTimeout(frame,2000);
+                
+                
+            }
+            
+            pos++;
+            elem.style.background='linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(255,128,0,1) '+pos+'%, rgba(0,0,0,1) 100%)';
+              
+          }
+           
+        }
+        
+       
+        
+        
+        
+       
+        
+    </script>
+
+	<style type="text/css">
+        
+        
+		
+        
+        
+        @media only screen and (max-width:530px) {
+              /* For mobile phones: */
+              
+            
+             .car,.ismall
+            {
+                
+                margin: auto !important;
+                width: 100% !important;
+
+                display: inline-block;
+            }
+            .car{
+                float: none !important;
+                height: 100% !important;
+                margin:auto !important;
+                margin-top: 5% !important;
+            }
+            .tabcontent{
+                height: 100% !important;
+                width: 100%!important;
+            }
+            .tabcontent div{
+                height: 100% !important;
+                width: 100%!important
+            }
+            .tab
+            {
+                width: 100% !important;
+                margin: auto !important;
+                
+
+
+            }
+            .tab button {
+                font-size: 20px!important;
+            }
+            .ismall
+            {
+                height: auto!important;
+                width: 100%!important;
+            }
+
+            
+            
+            
+            
+        }
+        
+
+
+.parallax {
+    /* The image used */
+    background-image: url("images/cnew.jpg");
+
+    /* Set a specific height */
+    min-height: 380px; 
+    position: relative;
+    top: -20px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    
+}
+
+/*main style start*/
+
+
+.tab {
+    
+    border: none;
+    color: white;
+    width: 30%;
+    height: 64px;
+    margin: auto;
+    padding: 5px;
+    margin-top:-30px;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 3;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+/*    background-color: inherit;*/
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    transition: 0.3s;
+    font-size: 30px;
+    
+    margin-left: -1px;
+    font-weight: 300;
+    background-color: rgb(13,13,13);
+    border-collapse: separate;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ff6600;padding-top: 3%;
+    box-shadow: 0px 2px 6px black;
+
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ff6600;
+    text-decoration: unset;
+}
+
+/* Style the tab content */
+.tabcontent {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    position: relative;
+    margin-top:10px;
+    margin: auto;  
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 17px; 
+    font-weight: 300; 
+    line-height: 28px;      
+    text-align: justify;
+    padding: 40px;
+    background-color: white;
+    border-radius: 3px;
+    color: lightgray;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    height: 100%;
+    width: 90%;
+}
+
+
+body{    background: repeating-linear-gradient(
+    -55deg,
+    #ffffff,
+    #f5f5f0 10px,
+    #ffffff 10px,
+    #f5f5f0 20px
+  );}
+
+        
+.ismall {
+	height: 99%;
+    border: 1px white;
+	width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    position: relative;
+}
+
+        .car
+            {
+            
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+            position: relative;
+            float: right;
+            height: 486px;     
+            font-family: 'Quicksand', sans-serif;
+ 
+            font-size: 17px; 
+            font-weight: 300; 
+            line-height: 28px; 
+            
+            text-align: justify;
+            padding: 40px;
+
+
+            
+            background-color: rgba(13,13,13,0.97);
+            
+            color: lightgray;
+            
+            
+            
+            
+            
+            
+        }
+        .car:hover{
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    /*main style start*/  
+        
+#heading{
+    
+            width: 100%;
+            animation-duration: 0.4s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1;
+            animation-name: example;
+            padding-top: 230px;
+            text-align: center;
+            position: relative;
+            font-family: 'Quicksand', sans-serif;
+
+            
+        }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {left:-15px; opacity: 0.2;}
+    25%  {left:-10px; opacity: 0.4;}
+    50%  {left:-6px; opacity: 0.6;}
+    75%  {left:-4px; opacity: 0.8;} 
+    100% {left:0px; opacity: 1;}
+}
+
+/* Standard syntax */
+
+@keyframes example {
+    0%   {left:-15px; opacity: 0.2;}
+    25%  {left:-10px; opacity: 0.4;}
+    50%  {left:-6px; opacity: 0.6;}
+    75%  {left:-4px; opacity: 0.8;} 
+    100% {left:0px; opacity: 1;}
+}
+
+#heading2{
+    
+            
+            animation-duration: 0.4s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1;
+            animation-name: example2;
+            font-family: 'Quicksand', sans-serif;
+
+            
+        }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+    0%   {left:15px; opacity: 0.2;}
+    25%  {left:10px; opacity: 0.4;}
+    50%  {left:6px; opacity: 0.6;}
+    75%  {left:4px; opacity: 0.8;} 
+    100% {left:0px; opacity: 1;}
+}
+
+/* Standard syntax */
+
+@keyframes example2 {
+    0%   {left:105px; opacity: 0.2;}
+    25%  {left:10px; opacity: 0.4;}
+    50%  {left:6px; opacity: 0.6;}
+    75%  {left:4px; opacity: 0.8;} 
+    100% {left:0px; opacity: 1;}
+}
+        
+</style>
+
+</head>
+<body onload="myMove()">
+     
+	<!-- NAVBAR STARTS -->
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="margin-top: 12%;margin-bottom:-7%;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- dynamic tmr logo -->
+
+                <div id="logo2" style="position: fixed; left:50px; top: 5px;float:left;">  
+                    <img class="imgA1" src="images/icon1.png" width="250" height="100" alt="icon">
+                    <img class="imgB1" id="b1" src="images/wheel.png" >
+                    <img class="imgC1" src="images/icon.png" height="80px" width="190px" style="margin-left: -20%;margin-top: 7%;">
+                </div>
+                
+            </div>
+
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="border:none;margin-bottom: -75px;">
+
+        <ul class="nav navbar-nav navbar-right" style="position: relative; top:32px; right: auto;">
+            <li><a href="index.html#ab">About Us</a></li>
+            <li class="dropdown">
+              <a href="team.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Team <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="team.html">Current Team</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="alumni.html">Alumni</a></li>
+              </ul>
+            </li>
+
+        <li class="dropdown">
+          <a href="cars.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cars <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <!-- <li ><a onclick="jumper('v9')">V9</a></li>
+            <li role="separator" class="divider"></li> -->
+              <li ><a onclick="jumper('v8')">V8</a></li>
+            <li role="separator" class="divider"></li>
+              <li ><a onclick="jumper('v7')">V7</a></li>
+            <li role="separator" class="divider"></li>
+              <li ><a onclick="jumper('v6')">V6</a></li>
+            <li role="separator" class="divider"></li>
+              <li ><a onclick="jumper('v5')">V5</a></li>
+            <li role="separator" class="divider"></li>
+              <li ><a onclick="jumper('v4')">V4</a></li>
+            <li role="separator" class="divider"></li>
+              <li ><a onclick="jumper('v3')">V3</a></li>
+            <li role="separator" class="divider"></li>
+              <li ><a onclick="jumper('v2')">V2</a></li>
+            <li role="separator" class="divider"></li>
+              <li ><a onclick="jumper('v1')">V1</a></li>
+            <li role="separator" class="divider"></li>
+
+        </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="achievements.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">History <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="competitions.html">Competitions</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="achievements.html">Achievements</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        
+      </ul>
+    </div>
+    </div>
+    <div></div>
+    <!-- moving foil -->
+    <hr id="animate" style="width:100%;height:5px; background-color: orange; position: relative; -webkit-transition: all 0.4s ease;transition: all 0.4s ease;margin-top:75px;margin-bottom: 0px;border: none;"> 
+</nav>
+    
+    
+    <!-- NAVBAR ENDS -->
+    
+    <div></div>
+    
+    
+    <div class="parallax"><center><h2 id="heading" style="color: white;font-size: 40px;">The Cars</h2><h5 id="heading2" style="margin-left: 80px;margin-right: 80px;color: rgba(255,253,254,0.9);font-size: 16px;">The legacy of Team Manipal Racing is its cars, from the very first V1 to the latest ones, taking technology to a higher level each time.</h5></center><br></div>
+    <p id="viro"></p>
+
+<!--<div class="spinner-wrapper">
+<div class="spinner">
+  <div class="double-bounce1"></div>
+  <div class="double-bounce2"></div>
+</div>
+</div>-->
+    
+    
+<div class="tab">      <!-- THE CAR NAME TAB -->
+<!--   <button class="tablinks" onclick="openCity(event, 'V9')" id="v9">V9</button>
+ -->  <button class="tablinks" id="v8" onclick="openCity(event, 'V8')" id="v8">V8</button>
+  <button id="v7" class="tablinks" onclick="openCity(event, 'V7')">V7</button>
+  <button id="v6" class="tablinks" onclick="openCity(event, 'V6')">V6</button>
+  <button id="v5" class="tablinks" onclick="openCity(event, 'V5')">V5</button>
+  <button id="v4" class="tablinks" onclick="openCity(event, 'V4')">V4</button>
+  <button id="v3" class="tablinks" onclick="openCity(event, 'V3')">V3</button>
+  <button id="v2" class="tablinks" onclick="openCity(event, 'V2')">V2</button>
+  <button id="v1" class="tablinks" onclick="openCity(event, 'V1')">V1</button>
+</div>
+    
+    
+
+<!-- <div id="V9" class="tabcontent">
+  <img class="ismall" src="images/d.jpg" style="height: 453.5px;">
+  <div class="car" style="height: 453.5px;">
+      <strong>Weight</strong>: 171 kg<br />
+				<strong>Suspension</strong>:<br />
+				&emsp;Front:  Short long arm suspension<br />
+				&emsp;Rear: 4 link suspension<br />
+				<strong>Dampers</strong>: fox float<br />
+				<strong>Brakes type</strong>: roof mounted dual master cylinder type<br />
+				<strong>Chassis</strong>: Rear braced roll cage<br />
+				<strong>Wheels</strong>: front- Maxxis AT Rear-maxxis razr MX<br />
+				<strong>Transmission</strong>: Polaris P 90 CVT 2 stage custom gear box<br />
+				<strong>Steering</strong>: custom design rack and pinion<br />
+				<strong>Car no</strong>: 62<br><br><br>
+                
+                </div>
+                <a href="gallery.html"><button class="button"><span>See More Pictures </span></button></a>
+                
+</div> -->
+
+<div id="V8" class="tabcontent">
+  <img class="ismall" src="images/V/v8.jpg" style="height: 446px;">
+  <div style="height: 446px; " class="car">
+      
+      <strong>Weight</strong>: 171 kg<br />
+				<strong>Suspension</strong>:<br />
+				&emsp;Front:  Short long arm suspension<br />
+				&emsp;Rear: 4 link suspension<br />
+				<strong>Dampers</strong>: fox float<br />
+				<strong>Brakes type</strong>: roof mounted dual master cylinder type, Custom breakpads<br />
+				<strong>Chassis</strong>: Rear braced roll cage<br />
+				<strong>Wheels</strong>: front- Maxxis AT Rear-maxxis razr MX<br />
+				<strong>Transmission</strong>: Gaged GX 9 CVT 2 Stage Custom Gear Box<br />
+				<strong>Steering</strong>: custom design rack and pinion<br />
+				<strong>Car no</strong>: 62<br><br><br>
+    
+    
+    </div>
+    <a href="gallery.html"><button class="button"><span>See More Pictures </span></button></a>
+    
+    </div>
+
+
+    <div id="V7" class="tabcontent">
+  <img class="ismall" src="images/V/v7.jpg" style="height: 453.5px;">
+  <div  class="car" style="height: 453.5px;">
+				
+	        	<strong>Weight</strong>: 157 kg<br />
+				<strong>Suspension</strong>: <br/>
+				&emsp;Front: Double A-arm <br />
+		        &emsp;Rear: Double A-arm with toe control arm<br />
+				<strong>Dampers</strong>:  Fox float 3 EVOL R<br />
+				<strong>Brakes type</strong>:  Dual master cylinder with disc brakes<br />
+				<strong>Chassis</strong>: Front braced roll cage<br />
+				<strong>Wheels</strong>: Carlisle trailwolf<br />
+				<strong>Transmission</strong>: 2 stage reduction custom gear box  <br />
+				<strong>Steering</strong>: Custom rack and pinion steering mechanism<br />
+				<strong>Car no</strong>: 20
+                </div>
+                <a href="gallery.html#v7pic"><button class="button"><span>See More Pictures </span></button></a>
+</div>
+    
+
+    <div id="V6" class="tabcontent">
+  <img class="ismall" src="images/V/v6.jpg" style="height: 439.8px;">
+  <div style="height: 439.8px;" class="car">
+				
+				<strong>Weight</strong>: 187 kg<br />
+				<strong>Suspension</strong>:<br />
+				&emsp;Front: Double A-arm<br />
+				&emsp;Rear: Three link <br />
+				<strong>Dampers</strong>:  Fox float<br />
+				<strong>Brakes type</strong>: Floor mounted dual master cylinder<br />
+				<strong>Chassis</strong>: Rear braced roll cage<br />
+				<strong>Wheels</strong>:   Rear- Carlisle ACT 23 inches Front-  Maxxis AT 22 inches <br />
+				<strong>Transmission</strong>: 2 stage reduction custom gear box<br />
+				<strong>Steering</strong>: <br />
+				<strong>Car no</strong>: 79
+                
+</div>
+<a href="gallery.html#v6pic"><button style="margin-right: 0px!important;" class="button"><span>See More Pictures </span></button></a>
+</div>
+    
+    
+    <div id="V5" class="tabcontent">
+  <img class="ismall" src="images/V/v5.jpg" style="height: 437.7px;">
+  <div style="height: 437.7px;" class="car">
+		
+				<strong>Weight</strong>: 171 kg<br />
+				<strong>Suspension</strong>:<br />
+				&emsp;Front:  Short long arm suspension<br />
+				&emsp;Rear: 4 link suspension<br />
+				<strong>Dampers</strong>: fox float<br />
+				<strong>Brakes type</strong>: roof mounted dual master cylinder type<br />
+				<strong>Chassis</strong>: Rear braced roll cage<br />
+				<strong>Wheels</strong>: front- Maxxis AT Rear-maxxis razr MX<br />
+				<strong>Transmission</strong>: Polaris P 90 CVT 2 stage custom gear box<br />
+				<strong>Steering</strong>: custom design rack and pinion<br />
+				<strong>Car no</strong>: 62	
+                
+</div>
+<a href="gallery.html#v6pic"><button class="button"><span>See More Pictures </span></button></a>  
+</div>
+
+        <div id="V4" class="tabcontent">
+  <img class="ismall" src="images/V/v4.jpg" style="height: 453.6px;">
+  <div style="height: 453.6px;" class="car">
+				
+				<strong>Weight</strong>: 227 kg<br />
+				<strong>Suspension</strong>:<br />
+				&emsp;Front: Short Long Arm (SLA) suspension<br />
+				&emsp;Rear: 4 link<br />
+				<strong>Dampers</strong>: fox float<br />
+				<strong>Brakes type</strong>:  hydraulic disc brakes, swing mounted, front outboard, rear inboard.<br />
+				<strong>Chassis</strong>: Rear braced roll cage<br />
+				<strong>Wheels</strong>: Front Carlisle AT489 23 inches rear Maxxis AT<br/>
+				<strong>Transmission</strong>:  Polaris P 90 CVT 2 stage custom gear box<br />
+				<strong>Steering</strong>: rack and pinion assembly, turning radius of 3ft<br />
+				<strong>Car no</strong>: 113
+                
+</div>
+<a href="gallery.html#v5pic"><button class="button"><span>See More Pictures </span></button></a>
+</div>
+        <div id="V3" class="tabcontent">
+  <img class="ismall" src="images/V/v3.jpg" style="height: 407.9px;">
+  <div style="height: 407.9px;" class="car">
+				
+				<strong>Weight</strong>: 267 kg <br />
+				<strong>Suspension</strong>:<br />
+				Front: double wishbone (Short long arm type )<br />
+				Rear:Double wishbone short long arm<br />
+				<strong>Dampers</strong>: Rear braced roll cage<br />
+				<strong>Brakes type</strong>: Hydraulic disc brakes<br />
+				<strong>Chassis</strong>: Front braced roll cage<br />
+				<strong>Wheels</strong>: Maxxis AT 22 inches<br />
+				<strong>Transmission</strong>: P 85 PVT Polaris forward reverse gear box<br />
+				<strong>Steering</strong>: rack and pinion assembly, turning radius of 9ft<br />
+				<strong>Car no</strong>: 57
+                
+</div>
+<a href="gallery.html#v4pic"><button class="button"><span>See More Pictures </span></button></a>
+</div>
+        <div id="V2" class="tabcontent">
+  <img class="ismall" src="images/V/v2.jpg" style="height: 474px;">
+  <div style="height: 474px;" class="car">
+				
+				<strong>Weight</strong>: 289 kg <br />
+				<strong>Suspension</strong>:<br />
+				&emsp;Front: Short Long Arm (SLA) with nitrogen filled <br />
+				&emsp;Rear: Double A-arm suspension
+				<strong>Dampers</strong>: Rear braced roll cage<br />
+				<strong>Brakes type</strong>: Dual master cylinder with disc brakes<br />
+				<strong>Chassis</strong>: rear braced <br />
+				<strong>Wheels</strong>: ITP holshot <br />
+				<strong>Transmission</strong>: P 85 PVT Polaris forward reverse gear box<br />
+				<strong>Steering</strong>: Rack and Pinion type steering system. Turning radius of 10 feet.<br />
+				<strong>Car no</strong>: 57
+                
+</div>
+<a href="gallery.html#v3pic"><button class="button"><span>See More Pictures </span></button></a>
+</div>
+        <div id="V1" class="tabcontent">
+  <img class="ismall" src="images/V/v1.jpg" style="height: 510px;">
+  <div style="height: 510px;" class="car">
+        
+	        	<strong>Weight</strong>: 361 kg <br />
+				<strong>Suspension</strong>:  <br />
+				&emsp;Front: SLA (short long arm) with nitrogen filled coil over oil shocks.   <br />
+				&emsp;Rear: double wishbone suspension<br />
+				<strong>Dampers</strong>: Fox<br />
+				<strong>Brakes type</strong>: Dual master cylinder with Disc brakes<br />
+				<strong>Chassis</strong>: Front braced roll cage<br />
+				<strong>Wheels</strong>: ITP holshot<br />
+				<strong>Transmission</strong>: P 85 PVT Polaris forward reverse gear box<br />
+				<strong>Steering</strong>: Rack and pinion type steering system with turning radius of 10 feet.<br />
+				<strong>Car no</strong>: 62
+                
+</div>
+<a href="gallery.html#v2pic"><button class="button"><span>See More Pictures </span></button></a>
+</div>
+
+<br>
+    <br><br>
+
+	
+
+<footer class="footer-distributed">
+
+            <div class="footer-right">
+
+                <a href="https://www.facebook.com/Team.Manipal.Racing/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/teammanipalracing/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <br><br>
+
+
+
+            </div>
+
+
+
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="index.html#ab">About</a>
+                    ·
+                    <a href="sponsors.html">Sponsors</a>
+                    ·
+                    <a href="gallery.html">Gallery</a>
+                    ·
+                    <a href="contact.html">Contact Us</a>
+                </p>
+
+                <p id="foot_manipal">Team Manipal Racing</p>
+                
+            </div>
+
+            <div id="meet" onclick="toggle()" onmouseover="change();">Meet the developers <i style="color: yellow;" class="fas fa-code"></i></div>
+            <div class="names" onclick="toggle()" onmouseout="back();"><a style="text-decoration:none!important;" href="https://www.linkedin.com/in/himanshu-thakur-a37a17172/" target="_blank">Himanshu</a><em><span id="and"> and </span></em><a href="https://www.linkedin.com/in/mohd-hamza-04040b164" target="_blank">Hamza</a></div>
+
+</footer>
+
+<script>
+    
+ function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    console.log(1);
+    evt.currentTarget.className += " active";
+    
+    
+}   
+    
+    
+
+
+
+// Get the element with id="defaultOpen" and click on it
+   
+
+</script>
+        
+
+<!--<script type="text/javascript">
+    $(document).ready(function() {
+                //Preloader
+            $(window).on("load", function() {
+                    preloaderFadeOutTime = 500;
+                            function hidePreloader() {
+                                    var preloader = $('.spinner-wrapper');
+                                    preloader.fadeOut(preloaderFadeOutTime);
+                            }
+                    hidePreloader();
+            });
+    });
+</script>-->
+
+</body>
+</html>

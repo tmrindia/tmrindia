@@ -1,0 +1,60 @@
+
+
+#card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          max-width: 250px;
+          text-align: center;
+          font-family: 'Quicksand',sans-serif;
+          position: relative;
+          margin-left: 3%;
+          background-color: rgba(13,13,13,0.93) ;
+          transition: 0.2s all ease;
+          padding: 0px;
+          border-bottom: 1px solid rgba(255,166,6,0.4);
+          
+          
+       
+        }
+
+#card:hover {
+          box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+        }
+
+
+
+
+   
+#people{
+   
+    position: relative;
+    margin-top: 19%;
+    border-collapse: separate;
+    border-spacing: 80px 20px;
+    margin-left: 3%;
+}
+.hov{
+    padding: 10px;
+    color: rgba(255,128,0,0.95);
+    transition: 0.2s all ease;
+    font-size: 20px;
+    background-color: black;
+    border-bottom: 1px solid rgba(255,128,0,0.6);
+    
+}
+
+.hov:hover{
+    color: rgba(255,150,50,1);
+}
+p{
+    color:white;
+    font-size: 15px;
+    margin-bottom: 4%;
+}
+.title2{
+    color:white;
+    font-size: 18px;
+}
+
+
+
+

@@ -1,0 +1,190 @@
+.navbar {
+			background: linear-gradient(to right, rgba(255,255,255,0.8) 0%, rgba(13,13,13,0.7) 30%, rgba(13,13,13,0.89) 60%,rgba(13,13,13,1) 100%);
+            min-height: 120px;
+			border: transparent;
+            font-size: 17px;
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            font-family: 'Quicksand', sans-serif; 
+            
+        }
+
+        @media only screen and (min-width:930px) {
+        
+            .navbar li:hover
+            .dropdown-menu{
+                display: block;
+                
+                
+            }
+            
+            .navbar li:not(hover)
+            .dropdown-menu{
+                display: none;}
+        
+        }
+       
+        .dropdown-menu{
+            font-size: 15px;
+            padding: 5px;
+            border-radius:5px;
+            animation: fadeEffect 0.6s;
+            background-color: rgba(255,255,255,0.9);
+            border-bottom: 1px solid black;
+            
+        }
+        
+      
+        .navbar .shrink {
+            min-height: 110px;
+            background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(13,13,13,1) 35%,rgba(13,13,13,1) 100%);
+           
+        }
+        .navbar-inverse .navbar-nav>li>a{
+            color: #cccccc;
+            margin-top: 10px;
+            transition:0.3s;
+            margin-right: 0px;
+
+        }
+
+        .navbar-right
+        {
+            text-align: right;
+            border:none;
+        }
+        .dropdown-menu{
+            text-align: right;
+        }
+        
+        .navbar-inverse .navbar-nav>li>a:hover{
+            color: white;
+        }
+        .dropdown-menu>li>a:hover{
+            background: none;
+            color: rgb(255,128,0);
+        }
+        .divider{
+            visibility: hidden;
+        }
+        
+
+
+        
+        
+/*logo animation*/
+.imgC1{
+                display: none;
+    }
+            
+        .imgA1 {
+
+          top: 2px;
+          left: 1px;
+          position: relative; 
+          
+            
+      
+        }
+        .imgB1 {
+
+            height:75px;
+            width:75px;
+            top: 23px;
+            left: 160px;
+            position: absolute;  
+            -webkit-animation: rotation 1.5s infinite linear;
+            
+        }
+        
+    
+        @-webkit-keyframes rotation {
+            from {
+                    -webkit-transform: rotate(0deg);
+            }
+            to {
+                    -webkit-transform: rotate(359deg);
+            }
+        }
+
+         @-webkit-keyframes fadeEffect {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes fadeEffect {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+
+ @media only screen and (max-width:530px) {
+
+            .navbar li:active
+            .dropdown-menu{display:block!important;}
+
+            .navbar-header{
+                border:none!important;
+            }
+
+            .imgC1{
+                display: block!important;
+                
+            }
+            .imgA1, .imgB1{
+                    display: none!important;
+            }
+            .scrolltop{
+                display: none!important;
+            }
+
+            #meet {
+                    width: 100%!important;
+                    margin: auto!important;
+                    text-align: center;
+                    font-size: 15px;
+                    margin-top: 15px!important;
+
+                 }
+
+              .names{
+
+                    width: 100%!important;
+                    margin: auto!important;
+                    text-align: center;
+                    font-size: 15px;
+                    margin-top: 15px!important;
+
+              }
+
+            
+
+}
+
+.names {
+        color: white;
+        display: none;
+        float: right;
+      }
+
+#meet:hover{
+    color: yellow;
+}
+
+      #meet {
+        color: rgba(255,253,254,0.8);
+        display: block;
+        /*width: 161px;*/
+        
+        float: right;
+        
+      }
+
+      .names a {
+        color: rgba(255,253,254,0.9);
+        text-decoration: none;
+
+      }
+
+      #and {
+        color: rgba(255,253,254,0.7);
+      }

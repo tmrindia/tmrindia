@@ -1,0 +1,63 @@
+             hr.st { 
+                        height: 55px; 
+                        border-style: solid; 
+                        border-color: rgba(255,255,255,0.4); 
+                        border-width: 1px 0 0 0; 
+                        border-radius: 20px;
+                        width: 24%;
+                        margin-left: 38.2%; 
+} 
+                hr.st:before { 
+                        display: block; 
+                        content: ""; 
+                        height: 30px; 
+                        margin-top: -31px; 
+                        border-style: solid; 
+                        border-color: rgba(255,255,255,0.4); 
+                        border-width: 0 0 1px 0; 
+                        border-radius: 20px; 
+}
+
+
+                
+        body{
+            background-image: url("images/dnew.jpg");
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /*NAVBAR ENDS*/
+
+         .timeline {
+          margin-top: 9%;
+        }
+
+      
+        pre {
+            background: transparent;
+            border: none;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            color: black;
+            font-weight: 400;
+        }
+
+        .white {
+          color: white;
+        }
+
+        @media only screen and (max-width:530px){
+          body {
+            background: rgba(1,1,1,0.9) !important;
+          }
+          .timeline ul li div {
+            background-color: rgba(255,254,253,0.7) !important;
+          }
+
+          h2 {
+            margin-top: 170px;
+          }
+
+          
+        }
